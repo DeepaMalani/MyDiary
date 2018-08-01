@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="title">Please enter title</string>
+    <string name="description">Please enter detail.</string>
+    <string name="date"></string>
+    <string name="save">Save</string>
+</resources>
