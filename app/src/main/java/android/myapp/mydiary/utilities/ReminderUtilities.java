@@ -40,6 +40,7 @@ public class ReminderUtilities {
                                    ))
                           .setReplaceCurrent(true)
                           .build();
+        //Schedule the job using FirebaseJobDispatcher
         dispatcher.schedule(jobReminder);
         sInitialized = true;
     }
