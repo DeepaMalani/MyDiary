@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.myapp.mydiary.database.AppDatabase;
 import android.myapp.mydiary.database.NoteEntry;
+import android.myapp.mydiary.utilities.ReminderUtilities;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -80,6 +81,9 @@ public class MainActivity extends AppCompatActivity implements NotesAdapter.Item
             }
         });
         setUpViewModel();
+
+        //Schedule the reminder job
+        ReminderUtilities.scheduleReminder(MainActivity.this);
     }
 
     @Override
@@ -106,4 +110,5 @@ public class MainActivity extends AppCompatActivity implements NotesAdapter.Item
             }
         });
         }
+
 }
