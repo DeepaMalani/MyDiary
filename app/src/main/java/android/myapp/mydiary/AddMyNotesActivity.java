@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.myapp.mydiary.database.AppDatabase;
 import android.myapp.mydiary.database.NoteEntry;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +30,10 @@ public class AddMyNotesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_my_notes);
+
+        String s = "hh";
+        String s2 = "ee";
+        s.compareTo(s2);
 
        mEditTextTitle = findViewById(R.id.edit_title);
        mEditTextDescription = findViewById(R.id.edit_description);

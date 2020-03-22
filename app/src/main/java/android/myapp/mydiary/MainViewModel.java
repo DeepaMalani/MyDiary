@@ -1,11 +1,11 @@
 package android.myapp.mydiary;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 import android.myapp.mydiary.database.AppDatabase;
 import android.myapp.mydiary.database.NoteEntry;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.List;
 
